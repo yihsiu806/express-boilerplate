@@ -134,6 +134,7 @@ app.get('/cookie', function(req, res) {
   })
 
   res.sendFile('/uploads/123.html')
+  res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
 app.listen(port, () => {
