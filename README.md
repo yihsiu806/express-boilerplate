@@ -5,7 +5,7 @@ npm install
 ```
 
 ```
-node server.js
+npx nodemon server.js
 ```
 
 ## Basic Route
