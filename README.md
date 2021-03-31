@@ -4,6 +4,10 @@
 npm install
 ```
 
+```
+node server.js
+```
+
 ## Basic Route
 
 ```
