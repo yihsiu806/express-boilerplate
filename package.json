@@ -1,0 +1,24 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "```\r npm install\r ```",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yihsiu806/express-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yihsiu806/express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/yihsiu806/express-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
