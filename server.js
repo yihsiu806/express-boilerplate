@@ -54,13 +54,13 @@ app.get('/example/c', [cb0, cb1, cb2])
 
 // app.route()
 app.route('/book')
-  .get(function(req, res) {
+  .get(function (req, res) {
     res.send('Get a random book')
   })
   .post(function (req, res) {
     res.send('Add a book')
   })
-  .put(function(req, res) {
+  .put(function (req, res) {
     res.send('Update the book')
   })
 
@@ -80,7 +80,7 @@ app.use('/api', api)
 // res.sendFile()
 // res.sendStatus()
 
-app.get('/cookie', function(req, res) {
+app.get('/cookie', function (req, res) {
 
   res.append('Set-Cookie', 'foo=bar; Path=/; HttpOnly')
 
@@ -135,6 +135,11 @@ app.get('/cookie', function(req, res) {
 
   res.sendFile('/uploads/123.html')
   res.sendFile(path.join(__dirname, 'public/index.html'))
+})
+
+// 404 not found
+app.use((req, res, next) => {
+  res.status(404).sendFile('public/404.html', { root: __dirname })
 })
 
 app.listen(port, () => {
